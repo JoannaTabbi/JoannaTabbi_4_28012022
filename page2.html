@@ -22,6 +22,11 @@
     <script src="./js/blocs.min.js" defer></script>
     <script src="./js/jqBootstrapValidation.min.js" defer></script>
     <script src="./js/formHandler.min.js" defer></script>
+	<noscript>
+		Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.
+		Voici les <a href="https://www.enable-javascript.com/fr/">
+		instructions pour activer JavaScript dans votre navigateur Web</a>.
+	   </noscript>
 
     <title>Contactez La chouette agence, entreprise de webdesign à Lyon</title>
 
@@ -72,7 +77,7 @@
               <a class="navbar-brand" href="index.html"
                 ><img
                   src="img/la-chouette-agence.png"
-                  alt="atlanta web design logo"
+                  alt="logo de la chouette agence"
                   height="40"
               /></a>
               <button
@@ -92,9 +97,8 @@
                 <li>
                   <a href="index.html">Accueil</a>
                 </li>
-                <li></li>
                 <li>
-                  <a href="page2.html">page2 &gt;</a>
+                  <a href="page2.html">Contactez-nous</a>
                 </li>
               </ul>
             </div>
@@ -131,43 +135,51 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-6">
+              <h2>Formulaire de contact</h2>
               <form
                 id="form_1"
+                action="./includes/form_1.php"
+                method="post"
                 novalidate
+                autocomplete="on"
                 success-msg="Your message has been sent."
                 fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
               >
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
+                  <label for="name"> Nom </label>
+                  <input id="name" class="form-control" placeholder="Jean Dubois" required />
                 </div>
                 <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="email"> Adresse email </label>
                   <input
                     id="email"
                     class="form-control"
                     type="email"
-                    required
+                    placeholder="jean.dubois@exemple.com" required
                   />
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required
-                    id="input_504"
-                  />
+                  <label for="input_504"> Comment avez-vous connu notre agence de web design? </label>
+                  <input list="origins" name="origine" class="form-control"
+                  required
+                  id="input_504"/>
+                  <datalist id="origins">
+                    <option value="De bouche à oreille">
+                    <option value="J'ai répéré vos locaux à Lyon">
+                    <option value="Via des réseaux sociaux">
+                    <option value="Par recherche Google">
+                    <option value="Autre">
+                  </datalist>
                 </div>
                 <div class="form-group">
-                  <label>
-                    Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
+                  <label for="message">
+                    Brief de votre projet <br /> </label
                   ><textarea
                     id="message"
                     class="form-control"
                     rows="4"
                     cols="50"
+                    placeholder="Ajoutez autant de détails que nécessaire"
                     required
                   ></textarea>
                 </div>
@@ -191,13 +203,13 @@
       <!-- bloc-7 END -->
 
       <!-- ScrollToTop Button -->
-      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
+      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" tabindex="0"
         ><span class="fa fa-chevron-up"></span
       ></a>
       <!-- ScrollToTop Button END-->
 
       <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <div class="bloc bgc-footer d-bloc" id="bloc-8">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
@@ -207,28 +219,28 @@
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a class="social" href="index.html" aria-label="Retrouvez-nous sur Twitter"
                       ><i class="fab fa-twitter"></i>
                     </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a class="social" href="index.html" aria-label="Retrouvez-nous sur Facebook"
                       ><i class="fab fa-facebook-f"></i>
                     </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a class="social" href="index.html" aria-label="Retrouvez-nous sur Dribbble"
                       ><i class="fab fa-dribbble"></i>
                     </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a class="social" href="index.html" aria-label="Retrouvez-nous sur Instagram"
                       ><i class="fab fa-instagram"></i>
                     </a>
                   </div>
