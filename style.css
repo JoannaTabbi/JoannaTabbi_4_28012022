@@ -18,7 +18,7 @@ font-weight: 700;
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+   
 }
 
 a:hover {
@@ -186,7 +186,7 @@ a:hover {
 }
 
 .l-bloc .navbar-toggle .icon-bar {
-    color: #AB3521;
+    color: #AA3F0E;
 }
 
 .d-bloc .panel .btn-wire,
@@ -254,9 +254,10 @@ a:hover {
 .nav > li a {
     margin-top: 4px;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: normal;
     border: 2px solid #fff;
-    background-color: #4f4941;
+    border-radius: 6px;
+    background-color: #303030;
     color: #fff;
 }
 
@@ -266,9 +267,10 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    border: 2px solid #4f4941;
+    border: 2px solid #303030;
     background: #fff;
-    color: #4f4941;
+    color: #303030;
+    font-weight: bold;
 }
 
 .navbar-toggle {
@@ -382,14 +384,14 @@ nav .caret {
 .btn {
     margin: 0 5px 5px 0;
     border: 2px solid #fff;
-    background: #892B1A;
+    background: #AA3F0E;
     color: #FFFFFF;
 }
 
 .btn:hover {
-    border: 2px solid #892B1A;
+    border: 2px solid #AA3F0E;
     background: #fff;
-    color: #892B1A;
+    color: #AA3F0E;
 }
 
 .btn.pull-right {
@@ -633,7 +635,7 @@ h1 {
 }
 .social i:hover {
     background-color: #fff;
-    color: #4f4941;
+    color: #303030;
 }
 
 h2 {
@@ -656,7 +658,7 @@ h3 {
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
-    color: #AB3521;
+    color: #AA3F0E;
     font-size: 4rem;
 }
 
@@ -678,7 +680,7 @@ h3 {
 }
 
 .black-background {
-    background-color: rgba(62, 62, 62, 0.9);
+    background-color: rgba(48, 48, 48, 0.9);
     padding: 40px 40px 40px 40px;
     opacity: 0.9;
 }
@@ -693,10 +695,10 @@ h3 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #892B1A;
+    background-color: #AA3F0E;
 }
 .bgc-footer {
-    background-color: #4f4941;
+    background-color: #303030;
 }
 
 .tc-white {
@@ -712,7 +714,7 @@ h3 {
 }
 
 .ltc-atomic-tangerine {
-    color: #DB5A42!important;
+    color: #AA3F0E!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -944,4 +946,17 @@ h3 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+.breadcrumb {
+    margin: 15px 15px 70px;
+}
+.breadcrumb-item a {
+    font-size: 1.6rem;
+    color: #303030;
+    font-weight: normal;
+}
+.breadcrumb>.active {
+    font-size: 1.6rem;
+    font-weight: bold;  
+    color: #303030;
 }
