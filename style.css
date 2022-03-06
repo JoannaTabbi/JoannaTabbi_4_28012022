@@ -457,14 +457,14 @@ nav .caret {
 .btn {
     margin: 0 5px 5px 0;
     border: 2px solid #fff;
-    background: #AA3F0E;
+    background: #BD460F;
     color: #FFFFFF;
 }
 
 .btn:hover {
-    border: 2px solid #AA3F0E;
+    border: 2px solid #BD460F;
     background: #fff;
-    color: #AA3F0E;
+    color: #BD460F;
 }
 
 .btn.pull-right {
@@ -716,7 +716,7 @@ h1 {
 }
 .social a:hover i {
     background-color: #fff;
-    color: #AA3F0E;
+    color: #BD460F;
 }
 
 h2 {
@@ -740,7 +740,7 @@ h3 {
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
-    color: #AA3F0E;
+    color: #BD460F;
     font-size: 4rem;
 }
 
@@ -763,7 +763,7 @@ h3 {
 
 .black-background {
     background-color: rgba(48, 48, 48, 0.8);
-    padding: 40px 40px 40px 40px;
+    padding: 40px 5px;
 }
 
 .bold-link {
@@ -780,7 +780,7 @@ h3 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #AA3F0E;
+    background-color: #BD460F;
 }
 
 .tc-white {
@@ -796,7 +796,7 @@ h3 {
 }
 
 .ltc-atomic-tangerine {
-    color: #AA3F0E!important;
+    color: #BD460F!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -833,7 +833,7 @@ address a, address a:visited {
     text-decoration: underline;
 }
 address a:hover {
-    color: #AA3F0E;
+    color: #BD460F;
     font-weight: 500;
 }
 footer h2 {
