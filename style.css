@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 body {
     font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #575757;
@@ -552,12 +554,12 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 2rem;
+    font-size: 3.2rem;
     width: 50px;
     height: 50px;
     margin-left: -25px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .7);
     color: #FFF;
     font-weight: 100;
     z-index: 1;
@@ -568,7 +570,7 @@ a[data-lightbox]:hover::before {
 }
 
 a[data-lightbox]:hover img {
-    opacity: 0.6;
+    opacity: 0.5;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
@@ -684,8 +686,9 @@ p {
 }
 
 h1 {
+    font-family: "Open Sans", sans-serif;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 3.4rem;
 }
 
@@ -824,6 +827,28 @@ h3 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+address a, address a:visited {
+    color: rgba(0, 0, 0, .7);
+    text-decoration: underline;
+}
+address a:hover {
+    color: #AA3F0E;
+    font-weight: 500;
+}
+footer h2 {
+    font-size: 1.8rem;
+}
+.breadcrumb {
+    margin: 15px 15px 70px;
+}
+.breadcrumb-item a, .breadcrumb>.active {
+    font-size: 1.6rem;
+    color: #303030;
+
+}
+.breadcrumb>.active {
+    font-weight: bold;  
 }
 
 @media (max-width: 1024px) {
@@ -1044,15 +1069,4 @@ h3 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
-.breadcrumb {
-    margin: 15px 15px 70px;
-}
-.breadcrumb-item a, .breadcrumb>.active {
-    font-size: 1.6rem;
-    color: #303030;
-
-}
-.breadcrumb>.active {
-    font-weight: bold;  
 }
